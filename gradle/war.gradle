@@ -1,0 +1,8 @@
+// include version information into generated war file
+war {
+    archiveName="ROOT.war"
+    manifest {
+        attributes 'Specification-Title': '$projectName ' ,'Implementation-Title': '$jenkinsBuildTag', 'Implementation-Version': "${project.version}"
+    }
+    exclude('**/.env')
+}

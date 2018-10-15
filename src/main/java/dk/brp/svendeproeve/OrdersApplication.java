@@ -1,10 +1,14 @@
 package dk.brp.svendeproeve;
 
+import dk.brp.svendeproeve.resource.impl.OrdersResource;
 import io.swagger.jaxrs.config.BeanConfig;
 import lombok.extern.slf4j.Slf4j;
 import org.glassfish.jersey.server.ResourceConfig;
 
+import javax.ws.rs.ApplicationPath;
+
 @Slf4j
+@ApplicationPath("api")
 public class OrdersApplication extends ResourceConfig {
 
 
@@ -16,6 +20,7 @@ public class OrdersApplication extends ResourceConfig {
         beanConfig.setBasePath("/api");
         beanConfig.setResourcePackage("dk.brp.svendeporeve.resources");
         beanConfig.setScan(true);
+        register(OrdersResource.class);
     }
 
 

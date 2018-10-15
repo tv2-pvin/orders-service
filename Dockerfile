@@ -11,9 +11,9 @@ COPY gradle $APP_HOME/gradle
 # Download dependencies improved usage of docker cache layers
 # RUN ./gradlew -x test build
 COPY . .
-RUN ./mvn package
+RUN ./gradlew build
 
 # Run image
 FROM jetty:9.4-jre8-alpine
-COPY --from=BUILD_IMAGE /opt/sports-data-soccer/build/libs/orders.war /var/lib/jetty/webapps/
+COPY --from=BUILD_IMAGE /opt/orders/build/libs/ROOT.war /var/lib/jetty/webapps/
 EXPOSE 8080

@@ -1,0 +1,33 @@
+// Web-service/REST
+compile group: 'org.glassfish.jersey.containers', name: 'jersey-container-servlet', version: '2.26'
+compile group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version: '2.26'
+compile group: 'javax.ws.rs', name: 'javax.ws.rs-api', version: '2.1'
+// https://mvnrepository.com/artifact/org.glassfish.jersey.inject/jersey-hk2
+compile group: 'org.glassfish.jersey.inject', name: 'jersey-hk2', version: '2.26'
+
+// Database
+compile group: 'com.zaxxer', name: 'HikariCP', version: '2.7.1'
+compile group: 'org.postgresql', name: 'postgresql', version: '42.1.4'
+
+
+// Logging
+compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+compile group: 'net.logstash.logback', name: 'logstash-logback-encoder', version: '4.11'
+compile group: 'ch.qos.logback', name: 'logback-access', version: '1.2.3'
+compile group: 'org.codehaus.janino', name: 'janino', version: '3.0.7' // janino required for conditions in logback.xml
+
+
+// Misc
+compile group: 'io.swagger', name: 'swagger-jersey2-jaxrs', version: '1.5.16'
+compile group: 'com.google.code.gson', name: 'gson', version: '2.8.5'
+compile group: 'joda-time', name: 'joda-time', version: '2.10'
+// https://mvnrepository.com/artifact/org.projectlombok/lombok
+compile group: 'org.projectlombok', name: 'lombok', version: '1.18.0'
+
+
+// Test
+testCompile group: 'org.glassfish.jersey.test-framework.providers', name: 'jersey-test-framework-provider-bundle', version: '2.26'
+testCompile group: 'org.glassfish.jersey.test-framework', name: 'jersey-test-framework-core', version: '2.26'
+testCompile group: 'junit', name: 'junit', version: '4.12'
+testCompile 'com.github.stefanbirkner:system-rules:1.18.0'
