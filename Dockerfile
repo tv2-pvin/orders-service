@@ -15,5 +15,5 @@ RUN ./gradlew build
 
 # Run image
 FROM jetty:9.4-jre8-alpine
-COPY --from=BUILD_IMAGE /opt/orders/build/libs/ROOT.war /var/lib/jetty/webapps/
-EXPOSE 8080
+COPY --from=BUILD_IMAGE /opt/orders/build/libs/orders.war /var/lib/jetty/webapps/
+EXPOSE 80

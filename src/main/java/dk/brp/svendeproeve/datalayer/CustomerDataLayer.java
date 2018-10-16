@@ -1,7 +1,7 @@
 package dk.brp.svendeproeve.datalayer;
 
-import dk.brp.svendeproeve.model.response.Customer;
-import dk.brp.svendeproeve.model.response.CustomerList;
+import dk.brp.svendeproeve.model.Customer;
+import dk.brp.svendeproeve.model.CustomerList;
 
 public interface CustomerDataLayer {
 

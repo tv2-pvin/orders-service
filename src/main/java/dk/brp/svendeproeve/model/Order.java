@@ -1,6 +1,5 @@
-package dk.brp.svendeproeve.model.response;
+package dk.brp.svendeproeve.model;
 
-import dk.brp.svendeproeve.model.enums.OrderStatus;
 import lombok.Builder;
 import lombok.Data;
 

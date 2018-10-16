@@ -1,4 +1,4 @@
-package dk.brp.svendeproeve.model.enums;
+package dk.brp.svendeproeve.model;
 
 public enum OrderStatus {
     RECEIVED(1, "received");

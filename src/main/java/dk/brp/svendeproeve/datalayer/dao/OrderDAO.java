@@ -1,11 +1,11 @@
-package dk.brp.svendeproeve.dao;
+package dk.brp.svendeproeve.datalayer.dao;
 
 import javax.sql.DataSource;
 
-public class CustomerDAO {
+public class OrderDAO {
     private DataSource dataSource;
 
-    public CustomerDAO(DataSource dataSource) {
+    public OrderDAO(DataSource dataSource) {
         this.dataSource = dataSource;
     }
 }

@@ -1,6 +1,8 @@
 package dk.brp.svendeproeve;
 
-import dk.brp.svendeproeve.resource.impl.OrdersResource;
+import dk.brp.svendeproeve.config.ApplicationBindings;
+import dk.brp.svendeproeve.resource.impl.CustomerService;
+import dk.brp.svendeproeve.resource.impl.OrderService;
 import io.swagger.jaxrs.config.BeanConfig;
 import lombok.extern.slf4j.Slf4j;
 import org.glassfish.jersey.server.ResourceConfig;
@@ -20,7 +22,9 @@ public class OrdersApplication extends ResourceConfig {
         beanConfig.setBasePath("/api");
         beanConfig.setResourcePackage("dk.brp.svendeporeve.resources");
         beanConfig.setScan(true);
-        register(OrdersResource.class);
+        register(new ApplicationBindings());
+        register(OrderService.class);
+        register(CustomerService.class);
     }
 
 

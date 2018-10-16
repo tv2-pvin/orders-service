@@ -1,4 +1,4 @@
-package dk.brp.svendeproeve.model.response;
+package dk.brp.svendeproeve.model;
 
 import lombok.Builder;
 import lombok.Data;

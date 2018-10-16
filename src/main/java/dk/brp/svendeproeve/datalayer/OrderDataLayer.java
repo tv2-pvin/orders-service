@@ -1,9 +1,9 @@
 package dk.brp.svendeproeve.datalayer;
 
-import dk.brp.svendeproeve.model.enums.OrderStatus;
-import dk.brp.svendeproeve.model.response.Customer;
-import dk.brp.svendeproeve.model.response.Order;
-import dk.brp.svendeproeve.model.response.OrderList;
+import dk.brp.svendeproeve.model.OrderStatus;
+import dk.brp.svendeproeve.model.Customer;
+import dk.brp.svendeproeve.model.Order;
+import dk.brp.svendeproeve.model.OrderList;
 
 public interface OrderDataLayer {
 

@@ -1,6 +1,6 @@
 // include version information into generated war file
 war {
-    archiveName="ROOT.war"
+    archiveName="$archivesBaseName.$extension"
     manifest {
         attributes 'Specification-Title': '$projectName ' ,'Implementation-Title': '$jenkinsBuildTag', 'Implementation-Version': "${project.version}"
     }
